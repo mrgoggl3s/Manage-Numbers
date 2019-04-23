@@ -1,12 +1,30 @@
 public class Main {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
-        System.out.println("Hello Worldddd!");
-        System.out.println("Hello World! Jijau");
-        int[] numere = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
-        NumereImpare.printImpare(numere);
-        NumerePare.printPare(numere);
+        int n = 6;
+        while ( n > 1 ) {
+            if (n % 2 == 0) {
+                n = n / 2;
+
+            } else {
+                n = 3 * n + 1;
+            }
+            System.out.println(n);
+        }
+
+
+
+
+
+// se da un numar natural n, (alegeti un int la intamplare). Acestuia i se vor aplica urmatoarele transformari :
+//- daca n este par el devine n/2
+//- daca n este impar, devine 3*n+1
+//
+//Stiind ca pentru orice numar natural, la un moment dat, in urma transformarilor, numarul va deveni 1,
+//sa se determine numarul de termeni din sirul de transformari dupa regula data.
+//Exemplu :
+//pentru n = 6, se trece prin pasii n = 6, n = 3, n = 10, n = 5, n = 16, n = 8, n = 4, n = 2, n = 1 (stop).
+//deci, raspunsul este 9 (termeni sau pasi)
     }
 }
 
